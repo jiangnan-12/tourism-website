@@ -7,12 +7,18 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
-.DS_Store
-docs
+
+# Build outputs
+dist
 dist-ssr
+docs
 coverage
+
+# Local files
 *.local
+.DS_Store
 
 # Editor directories and files
 .vscode/*
@@ -24,8 +30,10 @@ coverage
 *.sln
 *.sw?
 
+# TypeScript
 *.tsbuildinfo
 
+# ESLint
 .eslintcache
 
 # Cypress
@@ -34,3 +42,17 @@ coverage
 
 # Vitest
 __screenshots__/
+
+# GitHub Pages specific
+.nojekyll
+index.html (root level)
+
+# Deployment scripts
+deploy-*.ps1
+deploy-*.js
+
+# Duplicate image folders
+网站图片 (root level)
+
+# Cleanup scripts
+cleanup.ps1
